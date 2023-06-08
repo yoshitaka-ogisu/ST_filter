@@ -1,7 +1,0 @@
-Metadata-Version: 2.1
-Name: ST-filter
-Version: 0.3
-Summary: A tool to find significant ties in a network
-Author: Yoshitaka Ogisu
-Author-email: yoshitaka.ogisu@gmail.com
-Requires-Python: >=3
