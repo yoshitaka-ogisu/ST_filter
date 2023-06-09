@@ -1,4 +1,4 @@
-# ST_filter for python
+# ST filter for python
 
 ## 1. Abstract
 Find *significant ties* on unweited and undirected temporal networks.
@@ -17,3 +17,11 @@ Install by local pip or put **ST_filter.py** on working directory, and
 import ST_filter
 ```
 
+## 5. Functions
+```python
+def ST_filter(A_snap, alpha, judge='p_val', opt_method='krylov')
+```
+### input
+A_snap
+A list of snapshots as adjacency matrices. Each sanpshot is $n \times n$.
+ 
