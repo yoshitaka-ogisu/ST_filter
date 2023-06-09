@@ -22,6 +22,5 @@ import ST_filter
 def ST_filter(A_snap, alpha, judge='p_val', opt_method='krylov')
 ```
 ### input
-A_snap
-A list of snapshots as adjacency matrices. Each sanpshot is $n \times n$.
+**A_snap** \ A list of snapshots as adjacency matrices. Each sanpshot is $n \times n$.
  
