@@ -2,6 +2,7 @@
 
 ## 1. Abstract
 Find *significant ties* on unweited and undirected temporal networks.
+This code is based on [MATLAB code](https://zenodo.org/record/1243994#.XwGDKB1UvOS) given by Kobayashi et al. (2019).
 
 ## 2. Environment (test environment)
 * Windows 11, Mac OS 12
@@ -134,3 +135,26 @@ print(result)
 ```
 
 ## 7. Installation
+### Local pip installation
+Clone the repository and move the directory being **setup.py** with command prompt/ terminal. And run
+```
+pip install .
+```
+
+You can uninstall the library with running
+```
+pip uninstall st-filter
+```
+
+### Direct installation of **ST_filter.py**
+Download repository and put **ST_filter.py** on your working directory.
+**ST_filter.py** is in ST_filter directory.
+
+## 8. Contact
+yoshitaka.ogisu@gmail.com ([HP](https://sites.google.com/view/yoshitakaogisu/))
+
+## 9. Acknowledgment
+I appreciate valuable comments from [Teruyoshi Kobayashi](https://terukobayashi.wordpress.com/) and tests by Yuki Iwanaga.
+
+## 10. Referrence
+Kobayashi, Teruyoshi, Taro Takaguchi, and Alain Barrat. 2019. “The structured backbone of temporal social ties.” [Nature communications](https://www.nature.com/articles/s41467-018-08160-3) 10 (1): 1–11.
