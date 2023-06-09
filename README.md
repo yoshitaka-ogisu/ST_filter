@@ -16,6 +16,7 @@ Install by local pip or put **ST_filter.py** on working directory, and
 ```python
 import ST_filter
 ```
+See **7. Installation**
 
 ## 5. Function
 
@@ -100,7 +101,8 @@ def ST_filter_aat(AAT, t, alpha, judge='p_val', opt_method='krylov')
 >`activ_params` avtivity parameters for each nodes.
 
 ## 6.Example
-```python: example1
+*Example 1*
+```python
 import ST_filter as stf
 # Make test matrix A having 10 snapshots and 20 nodes.
 A = [np.random.choice(a = [0,1], size = 400, p= [0.9,0.1]).reshape((20,20)) for i in range(10)]
@@ -115,3 +117,20 @@ for t in range(len(A)):
 result = stf.ST_filter(A, 0.1) # use ST_filter
 print(result)
 ```
+
+*Example 2*
+```python
+from ST_filter import *
+
+# Make test list E0.
+E0 = np.array([[0, 2, 3],
+                [0, 5, 10],
+                [1, 1, 2],
+                [1, 3, 4],
+                [2, 2, 10]]) # [SnapshotID, node1, node2] for each row
+
+result = ST_filter_list(E0, 0.1) # use ST_filter_list
+print(result)
+```
+
+## 7. Installation
